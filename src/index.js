@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {logDOM} from "@testing-library/react";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,6 +11,16 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+// ReactDOM.render( React.createElement( "button", {
+//     onClick: () => console.log( "to the collection" )
+// } ) )
+//
+// ReactDOM.render("ButtonContainer", document.getElementById("root"))
+//
+// ReactDom.render(React.createElement"Product")
+// ReactDOM.render("Product", document.getElementById("root"))
+//
+// ReactDOM.render("Footer", document.getElementById("root"))
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
